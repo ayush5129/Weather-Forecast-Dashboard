@@ -1,0 +1,42 @@
+.info {
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    font-size: 25px;
+    padding: 8px;
+}
+
+.component_desc {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(16, 9, 9);
+    padding: 16px 40px 16px 40px;
+    border-radius: 0.4rem;
+    color: white;
+}
+
+.weather_icon {
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather_icon>small {
+    margin: 6px;
+}
+
+@media screen and (max-width: 1024px) {
+    .component_desc {
+        grid-template-columns: 1fr 1fr;
+    }
+}
